@@ -1,6 +1,8 @@
 # SpiroKit - Travel App Template with Typescript
 
-The official SpiroKit Travel app template with Typescript
+A SpiroKit Travel app template with Typescript
+
+![travel app banner image](https://i.imgur.com/0jCWLrc.png)
 
 ## Usage
 
