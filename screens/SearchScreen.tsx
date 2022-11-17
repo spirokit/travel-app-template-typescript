@@ -122,7 +122,6 @@ const SearchScreen = () => {
         <Categories></Categories>
       </VStack>
       <VStack
-        marginTop={-6}
         borderTopRadius={16}
         padding={4}
         flex={1}

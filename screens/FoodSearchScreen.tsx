@@ -52,7 +52,7 @@ const FoodSearchScreen = () => {
           <HStack space={2} alignItems="center">
             <SearchBox placeholder="What do you want?"></SearchBox>
             <Button
-              borderRadius={"8"}
+              borderRadius={8}
               width={"auto"}
               minWidth={12}
               size="sm"
@@ -60,7 +60,7 @@ const FoodSearchScreen = () => {
               IconLeftComponent={FilterIcon}
             ></Button>
             <Button
-              borderRadius={"8"}
+              borderRadius={8}
               size="sm"
               width={"auto"}
               minWidth={12}
@@ -70,7 +70,6 @@ const FoodSearchScreen = () => {
         </Box>
       </VStack>
       <VStack
-        marginTop={-6}
         borderTopRadius={16}
         padding={4}
         flex={1}
