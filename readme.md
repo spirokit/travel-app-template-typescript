@@ -6,7 +6,7 @@ A SpiroKit Travel app template with Typescript
 
 ## Usage
 
-1. Get your SpiroKit license [here](https://maurocodes.gumroad.com/l/spiro-kit-design-system)
+1. Get your SpiroKit license [here](https://spirokit.com). We support Parity Purchasing Power. Check our website to see if you are eligible for a discount, if you need it.
 
 2. Create a new project
 
