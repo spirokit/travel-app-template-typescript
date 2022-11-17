@@ -44,7 +44,6 @@ const FoodFiltersScreen = () => {
         <TitleTwo fontWeight={"bold"}>Search filters</TitleTwo>
       </HStack>
       <VStack
-        marginTop={-6}
         borderTopRadius={16}
         padding={4}
         flex={1}
