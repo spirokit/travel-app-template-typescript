@@ -19,10 +19,11 @@ import { LocationMarkerIcon } from "react-native-heroicons/outline";
 import { FilterIcon, MapIcon } from "react-native-heroicons/solid";
 import BackButton from "../components/BackButton";
 import Score from "../components/Score";
+import { ScreenNavigationProp } from "../navigation/GlobalParamList";
 
 const FoodSearchScreen = () => {
   const { colors } = useTheme();
-  const navigation = useNavigation();
+  const navigation = useNavigation<ScreenNavigationProp>();
   return (
     <ScrollView
       style={{
@@ -56,7 +57,7 @@ const FoodSearchScreen = () => {
               width={"auto"}
               minWidth={12}
               size="sm"
-              onPress={() => navigation.navigate("FoodFilters")}
+              onPress={() => navigation.navigate("FoodFilters", {})}
               IconLeftComponent={FilterIcon}
             ></Button>
             <Button

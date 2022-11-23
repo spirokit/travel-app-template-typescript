@@ -17,6 +17,7 @@ import {
 } from "@spirokit/core";
 import React, { memo } from "react";
 import { Dimensions } from "react-native";
+import { ScreenNavigationProp } from "../navigation/GlobalParamList";
 
 export type CarouselItem = {
   assetUrl?: string;
@@ -35,7 +36,7 @@ type CarouselProps = {
 
 const Carousel: React.FC<CarouselProps> = (props) => {
   const { title, description, items, variant = "vertical" } = props;
-  const navigation = useNavigation();
+  const navigation = useNavigation<ScreenNavigationProp>();
   return (
     <VStack space={4}>
       <VStack space={4}>
@@ -77,7 +78,7 @@ const Carousel: React.FC<CarouselProps> = (props) => {
               <Pressable
                 flex={1}
                 onPress={() => {
-                  navigation.navigate("Detail");
+                  navigation.navigate("Detail", {});
                 }}
                 shadow={1}
                 marginRight={4}

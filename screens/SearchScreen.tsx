@@ -26,6 +26,7 @@ import {
 import { SvgProps } from "react-native-svg";
 import Carousel, { CarouselItem } from "../components/Carousel";
 import Score from "../components/Score";
+import { ScreenNavigationProp } from "../navigation/GlobalParamList";
 
 const firstCarouselItems: CarouselItem[] = [
   {
@@ -179,7 +180,7 @@ const RecentSearches = () => {
 };
 
 const Categories = () => {
-  const navigation = useNavigation();
+  const navigation = useNavigation<ScreenNavigationProp>();
   return (
     <VStack space={2}>
       <Body fontWeight={"medium"}>Categories</Body>
@@ -188,7 +189,7 @@ const Categories = () => {
           <Button
             size="sm"
             IconLeftComponent={CakeIcon}
-            onPress={() => navigation.navigate("FoodSearch")}
+            onPress={() => navigation.navigate("FoodSearch", {})}
           >
             Food
           </Button>

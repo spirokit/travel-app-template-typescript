@@ -4,9 +4,10 @@ import FoodSearchScreen from "../screens/FoodSearchScreen";
 import HomeScreen from "../screens/HomeScreen";
 import SearchScreen from "../screens/SearchScreen";
 import FoodFiltersScreen from "../screens/FoodFiltersScreen";
+import { GlobalParamList } from "./GlobalParamList";
 
-const ExploreStack = createStackNavigator();
-const BrowseStack = createStackNavigator();
+const ExploreStack = createStackNavigator<GlobalParamList>();
+const BrowseStack = createStackNavigator<GlobalParamList>();
 
 const ExploreStackScreen = () => {
   return (
